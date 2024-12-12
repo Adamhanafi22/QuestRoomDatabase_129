@@ -11,7 +11,7 @@ import com.example.praktikum7.ui.View.mahasiswa.InsertMhsView
 import androidx.navigation.compose.composable
 
 @Composable
-fun PengelolaHalamna(
+fun PengelolaHalaman(
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier
 ){
