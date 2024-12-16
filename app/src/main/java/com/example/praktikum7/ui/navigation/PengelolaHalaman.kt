@@ -20,9 +20,9 @@ fun PengelolaHalaman(
     navController: NavHostController = rememberNavController(),
     modifier: Modifier = Modifier
 ){
-    NavHost(navController = navController, startDestination = DestinasiInsert.route) {
+    NavHost(navController = navController, startDestination = DestinasiHome.route) {
         composable(
-            route = DestinasiInsert.route
+            route = DestinasiHome.route
         ){
             HomeMhsView(
                 onDetailClick = {nim ->

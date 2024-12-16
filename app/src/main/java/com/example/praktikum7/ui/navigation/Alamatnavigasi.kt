@@ -15,6 +15,7 @@ object DestinasiDetail : Alamatnavigasi {
 object DestinasiUpdate : Alamatnavigasi{
     override val route = "update"
     const val NIM = "nim"
-    val routeWithArg = "nim"
+    val routeWithArg = "$route/{$NIM}"
+
 
 }
