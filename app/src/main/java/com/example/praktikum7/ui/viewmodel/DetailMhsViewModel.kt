@@ -21,9 +21,9 @@ class DetailMhsViewModel(
     private val repositoryMhs: RepositoryMhs,
 
 ) : ViewModel() {
-    private val nim: String = checkNotNull(savedStateHandle[DestinasiDetail.NIM])
+    private val _nim: String = checkNotNull(savedStateHandle[DestinasiDetail.NIM])
 
-    val detailUiState: StateFlow<DetailUiState> = repositoryMhs.getMhs(nim)
+    val detailUiState: StateFlow<DetailUiState> = repositoryMhs.getMhs(_nim)
         .filterNotNull()
         .map {
             DetailUiState(
